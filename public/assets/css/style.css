@@ -1,0 +1,135 @@
+@import url(reset.css);
+
+html,
+body{
+    background-color: #232323;
+    height: 100%;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.wrapper {
+    font-size: 30px;
+    font-family: 'Inconsolata';
+    height: 100%;
+    color: #f7fafc;
+}
+.list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+}
+.list__users{
+    background-color: #4a5568;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__title {
+    font-size: 50px;
+}
+
+.header__subtitle {
+    margin-right: 50%;
+}
+.content__registration {
+    margin: 0 auto;
+    margin-top: 3vw;
+    background-color: #D9D9D9;
+    width: 50%;
+}
+.form-register {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    padding: 10px;
+}
+
+.register__input {
+    font-size: 30px;
+    margin-top: 10px;
+}
+.registration__title {
+    text-align: center;
+}
+.register__input_submit {
+    font-size: 30px;
+}
+.list__users {
+    overflow-y: auto;
+    height: 400px;
+}
+.list__user {
+    list-style-type: none;
+    padding: 10px;
+}
+.list__user:nth-child(odd) {
+    color: #232323;
+    background-color: #D9D9D9;
+}
+.list__user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__user:nth-child(even) {
+    background-color: #777474;
+}
+
+.list__user:nth-child(even) .list__user-btn {
+    display: inline-block;
+    color: #232323;
+    padding: 5px;
+    background-color: #D9D9D9;
+}
+
+.list__user:nth-child(odd) .list__user-btn {
+    display: inline-block;
+    padding: 5px;
+    color: #D9D9D9;
+    background-color: #777474;
+}
+
+.list__user-btn {
+    border-radius: 10px;
+    text-align: center;
+    width: 10vw;
+}
+.list__add-user {
+    background-color: #1a202c;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add_user-items {
+    margin: 0 auto;
+}
+.add_user-item {
+    font-size: 30px;
+}
+.error {
+    color: red;
+}
+.chat_row {
+    background-color: #D9D9D9;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.chat {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
